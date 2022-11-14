@@ -31,7 +31,18 @@ describe('Sourcebooks login', function() {
             tabs: '6'
         }
     ];
-       
+
+    const newRoles = [
+        ...Roles,
+        {
+            name: "Tester",
+            tabs: '6'
+        },
+        {
+            name: "Developer",
+            tabs: '6'
+        }
+    ]
     
     Roles.forEach((role) => {
         it(`Verify ${role.name} role can log in and should see appropriate tabs`, function() {
